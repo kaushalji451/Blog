@@ -1,0 +1,128 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+  <div class="newform row col-lg-8 col-md-8">
+    <h1 class="text-center">Add new blog</h1>
+
+    <form
+      method="POST"
+      action="/blogs"
+      class="needs-validation"
+      novalidate
+      enctype="multipart/form-data"
+    >
+      <!-- title -->
+      <div class="col-12 mb-2">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          id="title"
+          placeholder="enter title"
+          name="blog[title]"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Title looks good!</div>
+      </div>
+      <!-- about -->
+      <div class="col-12 mb-2">
+        <label for="about" class="form-label">About</label>
+        <textarea
+          name="blog[about]"
+          id="about"
+          placeholder="enter about"
+          class="form-control"
+          required
+        >
+        </textarea>
+        <div class="invalid-feedback">enter somethings about</div>
+      </div>
+      <!-- descrition -->
+      <div class="col-12 mb-2">
+        <label for="Description" class="form-label">Description</label>
+        <textarea
+          name="blog[description]"
+          id="Description"
+          placeholder="enter a Description"
+          class="form-control"
+          required
+        >
+        </textarea>
+        <div class="invalid-feedback">Please enter a short discription</div>
+      </div>
+
+      <!-- image -->
+      <div class="col-12 mb-2">
+        <label for="image" class="form-label">Upload Blog Image </label>
+        <input
+          type="file"
+          id="image"
+          placeholder="enter image url"
+          name="blog[image]"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Please enter a image url/link</div>
+      </div>
+
+      <div class="row mb-2">
+        <!-- price -->
+        <div class="col-lg-6 col-sm-12">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="text"
+            id="price"
+            placeholder="enter price"
+            name="blog[price]"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter price</div>
+        </div>
+        <!-- location -->
+        <div class="col-lg-6 col-sm-12">
+          <label for="location" class="form-label">Location</label>
+          <input
+            type="text"
+            id="location"
+            placeholder="enter location"
+            name="blog[location]"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter a location</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- state -->
+        <div class="col-lg-6 col-sm-12">
+          <label for="state" class="form-label">State</label>
+          <input
+            type="text"
+            id="state"
+            placeholder="enter state"
+            name="blog[state]"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter a state</div>
+        </div>
+        <!-- country -->
+        <div class="col-lg-6 col-sm-12">
+          <label for="country" class="form-label">Country</label>
+          <input
+            type="text"
+            id="country"
+            placeholder=" enter country"
+            name="blog[country]"
+            class="form-control mb-4"
+            required
+          />
+          <div class="invalid-feedback">Please enter country</div>
+        </div>
+      </div>
+
+      <button class="btn btn-success text-center">Submit</button>
+    </form>
+  </div>
+</body>

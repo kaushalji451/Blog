@@ -1,0 +1,48 @@
+
+
+<nav class="navbar navbar-expand-lg  border-bottom sticky-top  ">
+    <div class="container-fluid">
+        <!-- icon -->
+      <a class="navbar-brand ms-4" href="/blogs"><i class="fa-solid fa-khanda logo"></i></a>
+<!-- colaps -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" >
+        
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- home -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link me-2 active" href="/blogs">Discover</a>
+          </li>
+          <!-- link -->
+         
+          <li class="nav-item">
+            <a class="nav-link me-2" href="/blogs">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="/blog/contact">Contact Us</a>
+          </li>
+        </ul>
+        
+        <!-- add a place -->
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/blogs/new">Add A Place</a>
+            </li>
+
+            <!-- signup login -->
+             <% if(!currUser){ %>
+              <a class="nav-link" href="/signup"><b>Sign In</b></a>
+              <a class="nav-link" href="/login"><b>Login</b></a>
+              <% } %>
+                <!-- logout  -->
+              <% if(currUser){ %>
+                <a class="nav-link" href="/logout"><b>Logout</b></a>
+                <% } %>
+
+          </ul>
+
+      </div>
+    </div>
+  </nav>

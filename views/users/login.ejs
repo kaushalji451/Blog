@@ -1,0 +1,33 @@
+<%- layout("/layouts/boilerplate") %>
+
+<body>
+
+    <div class="signup row">
+        <div class="signin col-lg-4 col-md-6 col-sm-8 ">
+           <i class="fa-solid fa-khanda logo mb-4 "></i>
+           <span><b>AncientGlories</b></span>
+            <h1 >Log in</h1>
+            
+              <form method="POST" action="/login" class="needs-validation" novalidate>
+                <div>
+                    <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control mb-2" placeholder="abhikaushal">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+          
+               <div>
+                <label for="password" class="form-label">password</label>
+                <input type="password" name="password" class="form-control mb-2" placeholder="......">
+                <div class="invalid-feedback">
+                    Please choose a password.
+                  </div>
+               </div>
+            
+                 <button class="btn btn-dark">Log in</button>
+              </form>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,39 @@
+<%- layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="contact d-flex justify-content-center m-4">
+        <div class="signin col-lg-4 col-md-6 col-sm-8 ">
+           <i class="fa-solid fa-khanda logo mb-4 "></i>
+           <span><b>AncientGlories</b></span>
+            <h1 >Contact Us</h1>
+              <form method="POST" action="#" class="needs-validation" novalidate>
+               <div>
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" name="contact[name]" class="form-control mb-2" placeholder="abhikaushal" required>
+                <div class="invalid-feedback">
+                  Please Inter a Name.
+                </div>
+               </div>
+          
+               <div>
+                <label for="Phone-Number" class="form-label">Phone Number</label>
+                <input type="number" name="contact[email]" id="Phone-Number" class="form-control mb-2" placeholder="8869946973" required>
+                <div class="invalid-feedback">
+                  Please Inter a Phone Number.
+                </div>
+               </div>
+          
+                <div>
+                  <label for="message" class="form-label">Message</label>
+                <textarea type="text" id="message" name="contact[message]" class="form-control mb-2" placeholder="Inter your Query" rows="5" required></textarea>
+                <div class="invalid-feedback">
+                  type Inter your Message.
+                </div>
+                </div>
+            
+                 <button class="btn btn-dark">Submit</button>
+              </form>
+        </div>
+    </div>
+    </div>
+</body>

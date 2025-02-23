@@ -1,0 +1,29 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+  <!-- <form action="/blogs/new" method="GET">
+    <button>Create new listing</button>
+</form> -->
+
+  <!-- data -->
+  <div
+    class="row row-cols-lg-3 mb-4 row-cols-md-3 d-flex justify-content-center row-cols-sm-3 row-cols-xs-1"
+  >
+    <% for(let i = 0; i < allBlogs.length; i++) { %>
+    <div class="card m-4">
+      <a href="/blogs/<%=allBlogs[i].id %>"
+        ><img src="<%=allBlogs[i].image.url %>" class="card-img-top" alt="..."
+      /></a>
+      <i class="fa-regular fa-heart"></i>
+      <div class="card-body">
+        <a href="/blogs/<%=allBlogs[i].id %>">
+          <h5 class="card-title"><%=allBlogs[i].title %></h5>
+
+          <p class="card-text">&#8377; <%=allBlogs[i].price %></p>
+
+          <p class="card-text"><%=allBlogs[i].about %></p></a
+        >
+      </div>
+    </div>
+    <% } %>
+  </div>
+</body>
