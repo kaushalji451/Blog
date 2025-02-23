@@ -59,6 +59,9 @@ h4 {
 }
 
 /* body */
+.index{
+  width: 100%;
+}
 .card-img-top {
   height: 15rem !important;
   border-top-left-radius: 20px !important;
